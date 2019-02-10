@@ -4,10 +4,9 @@ body{
     position:fixed;
 }
 @font-face{
-    font-family: anurati;
-    src:url(anuratiregular.otf);
+    font-family: mechanicalfun;
+    src: url('./fonts/mechanicalfun.woff2')
 }
-
 
 noscript{
     color: red;
@@ -205,11 +204,15 @@ header video{
     text-align: center;
     color: rgb(206, 209, 201);
     position: absolute;
-    width: 70%;
+    width: 100%;
     top: 40%;
-    filter: hue-rotate(240deg),saturate(8);
+    font-size: 1.3em;
+    font-family: mechanicalfun;
 }
-
+#text-landing span{
+    color: rgb(52, 192, 76);
+    font-size: 1.5em;
+}
 
 /* First Part Ends Here */
 
