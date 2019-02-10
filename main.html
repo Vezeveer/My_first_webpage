@@ -7,15 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <!--<link rel="stylesheet" href="fontawesome.5.7.1.all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
-    <style>
-        @font-face {
-    font-family: '1942_report1942_report';
-    src: url('nineteenfortytwo-webfont.woff2') format('woff2'),
-         url('nineteenfortytwo-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-    </style>
+    
 </head>
 <body>
     <noscript>Sorry. Your browser does not support javascript. Page will fail to load.</noscript>
@@ -29,22 +21,26 @@
     <h3 id="scroll-anim">&#8643&#8642</h3>
 
     <header>
-        <nav class="nav-bar">
+        <div class="nav-fill">
             <img src="logo.png" alt="logo here" id="logo">
             
             <a id="contact" class="w-lnk" href="#">Contact</a>
             <a class="w-lnk">About</a>
             <a class="w-lnk">Home</a>
-            <ul class="slide-bar">
-                <li><a class="home-slide">Home</a></li>
-                <li><a>Contact</a></li>
-                <li><a>About</a></li>
-            </ul>
+            
             <div id="menu-bar" class="mbar" onclick="slide()">
                 <div class="m-bar"></div>
                 <div class="m-bar"></div>
                 <div class="m-bar"></div>
             </div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="slide-bar">
+                <li><a class="home-slide">Home</a></li>
+                <li><a>Contact</a></li>
+                <li><a>About</a></li>
+            </ul>
         </nav>
         
         <video autoplay loop width="360" poster="atomicBomb_cap.jpg">
@@ -60,7 +56,7 @@
         </h1>
     </header>
     <main id="main">
-        <h2>The Sites I've Built</h2>
+        <h2>Some Of The Sites I've Built</h2>
         <section class="portfolio-container">
             <div class="mkfansite">
                 <img src="./imgs/scorpion-mk11.jpg" alt="mk11 img here">
@@ -74,10 +70,15 @@
                 <img src="./imgs/gasMaskNeon_sml.jpg" alt="neon gasmask img here">
                 <h3>Site 3 (selling a product)</h3>
             </div>
+            <!--<div class="site4">
+
+                <h3>Site 4 (movie library)</h3>
+            </div>-->
         </section>
 
-        <h2>My Skill Set</h2>
-            <div class="skills-placeholder88"></div>
+      
+
+        
     </main>
 
     <footer class="footer">
@@ -85,14 +86,18 @@
         <div id="contact">
             <img src="logo.png" width="90px" alt="logo img here">
             <br>
-            Lets build something.<br>
-            Lets work together.<br>
-            <button>Email me</button>
+            Lets build something<br>
+            Lets work together<br>
+            <button class="email-me">Email me</button>
+        </div>
+        <br>
+        <div id="social">
+            GitHub | CodeWars | StackOverflow
         </div>
         
         <br>
-        <p>mortalmanny@live.com
-            &copy; 2019 Emmanuel Pitcher | Vezeveer</p>
+        <p>mortalmanny@live.com<br>
+            &copy; 2019 Emmanuel Pitcher</p>
         
     </footer>
 

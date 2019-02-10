@@ -106,21 +106,20 @@ header{
     margin: 10px;
     margin-left: 20px;
 }
-.nav-bar{
+.nav-fill{
     position: fixed;
     width: 100%;
     background: #010c1b;
     height: 50px;
     border-bottom: 1px solid greenyellow;
     transition: opacity .5s, border-bottom .5s;
-    z-index: 1;
+    z-index: 2;
 }
 .w-lnk{
     margin: 10px;
     float: right;
     text-decoration: none;
-    color: white;
-    font-family: '1942_report1942_report', Courier, serif;
+    color: rgb(228, 228, 228);
     font-size: 1.2em;
     display: none; /* change here for desktop */
 }
@@ -143,27 +142,25 @@ header{
 }
 
 .slide-bar{
-    background: rgb(22, 83, 35);
+    background: rgb(21, 46, 21);
     position: fixed;
-    top: 35px;
+    top: -152px;
     text-align: center;
     list-style: none;
     list-style-position: inside;
     padding-left: 0;
     opacity: 0; /* changed here */
     width: 100%;
-    transition: left 0.5s;
+    transition: 0.5s;
+    z-index: 1;
 }
 .slide-bar li{
-    color: white;
-    font-size: 2em;
-    margin: 15px;
-    
-    font-family: '1942_report1942_report';
+    color: rgb(189, 206, 211);
+    padding: 15px;
+    font-size: 1.7em;
 }
 .slide-bar li:hover{
-    background: rgb(16, 107, 16);
-    font-size: 2.1em;
+    background: rgb(38, 88, 38);
 }
 
 .home-slide{
@@ -223,20 +220,29 @@ header video{
 }
 #main h2{   /* might remove h2*/
     background: #010c1b;
-    color: white;
+    color: rgb(194, 194, 194);
     margin: 0;
+    font-weight: 100;
 }
 .portfolio-container{
-    background: grey;
+    background: #010c1b;
     display: table;
     table-layout: fixed;
     width: 100%;
+    overflow: hidden;
 }
 .portfolio-container h3{
-    color: white;
+    color: rgb(194, 194, 194);
+    font-weight: 100;
+    overflow: hidden;
 }
 .portfolio-container img{
     width: 100%;
+    overflow: hidden;
+}
+.portfolio-container img:hover{
+    transform: scale(1.05);
+    transition: .5s;
 }
 .site2, .site3, .mkfansite{
     display: table-cell;
@@ -247,14 +253,44 @@ header video{
     height: 150px;
 }
 
+/* Section 2 Starts Here */
+
+#filler{
+    display: block;
+    height: 50vh;
+    background: white;
+}
+
+/* Footer Starts Here */
+
 .footer{
-    text-align: center;
-    color: white;
+    color: rgb(219, 219, 219);
     background: rgb(21, 46, 21);
-    height: 20vh;
+    text-align: center;
+    height: 40vh;
+}
+.footer p{
+    margin: 5px;
+    text-align: center;
+    background: rgb(21, 46, 21);
+}
+.email-me{
+    margin: 10px;
+    padding: 10px;
+}
+button{
+    background-color: rgb(78, 92, 81);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+.btn-green{
+    background: greenyellow;
+    transition: 4s;
 }
 #contact{
-    left: 0;
+    
+    margin: 5px;
 }
 
 
@@ -262,7 +298,7 @@ header video{
     text-align: center;
     display:none;
 }
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px){ 
     .w-lnk{
         display: block;
     }
@@ -273,7 +309,7 @@ header video{
     #desktop{
         display:block;
     }
-    header, main, footer{
+    header, main, footer{ /* change these */
         display: none;
     }
 }
